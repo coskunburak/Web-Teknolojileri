@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #7f7070;
+    /* overflow: hidden; Bu özelliği kaldırıyoruz */
+    overflow: auto; /* Sayfanın kaydırılabilir olmasını sağlamak için */
+}
+
+.container {
+    background: url(img/arkaplan.jpg);
+    min-height: 100vh; /* Yüksekliği esnek yaparak içeriğin taşmasını önlüyoruz */
+    background-size: cover;
+}
+
+.container .navbar {
+    width: 100%;
+    height: 8%;
+    background-color: rgba(134, 188, 236, 0.4); /* rgb değerini rgba ile güncelledik */
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 0.6%;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #424dc5;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 5%;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 60px;
+}
+
+.navbar ul li a {
+    color: #5864e1;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px; /* Bu satırdaki virgülü boşluk ile değiştirdik */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul li a.active {
+    background: #ff6e00;
+    border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+    background: rgba(228, 96, 40, 0.671);
+    border-radius: 4px;
+}
+
+.edu_header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.edu_header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.edu_main {
+    padding: 20px;
+}
+
+.edu_footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+marquee {
+    display: inline-block;
+    width: 100%;
+}
